@@ -1,0 +1,136 @@
+:root{
+    --primary-color:rgb(245, 84, 10);
+    --dark-grey:rgb(32, 29, 29);
+    --light-grey:rgb(105, 104, 104);
+}
+body{
+  font-family: 'roboto', sans-serif;  
+}
+.Main-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+     
+}
+/*Navigation*/
+.navigation{
+    height: 40px;
+    width: 100%;
+    color:var(--light-grey);
+    padding: 0.3rem;
+    position: relative;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    text-decoration: none;
+
+}
+a:hover {
+    background-color: rgb(86, 233, 101);
+  }
+.link-active{
+    text-decoration: none;
+    color: var(--light-grey);
+}
+ .btn0{
+    position: absolute;
+    right:150px;
+    background-color: var(--primary-color);
+    border: none;   
+    color: white;
+    padding: 9px 20px;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 50px;
+    margin-top: 16px;
+    font-weight: bold;
+    
+  }
+.button .btn{
+    position: relative;
+    height: 20px;
+    width: 100px;
+
+   
+}
+.navigation .nav-pills{
+    text-align: right;
+    position: absolute;
+    left:500px;
+    margin-top: 9px;
+    text-size-adjust: 10px;
+    padding: 3px;
+}
+
+.nav-pills .list-items-inline{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+    text-align: right;
+    
+}
+.nav-brand{
+    position:relative;
+    
+}
+.logo{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 200px ;
+    margin-top: 16px;
+}   
+/* body */
+.content{
+    margin-top: 190px;
+    margin-left: 200px;
+}
+.content .text-content {
+    color: var(--light-grey);
+    margin: 0px 0px 1px;
+    
+}
+.james{
+    font-size: 60px;
+    color: var(--dark-grey);
+    text-align: justify;
+    position: relative;
+    display: flex;
+    margin: 0px 0 0px; 
+}
+button{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    color: white;
+    padding: 9px 20px;
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.btn1{
+    background-color: var(--dark-grey);
+}
+
+.budha{
+   width: 450px;
+   position: absolute;
+   bottom:0;
+   right: 20%;
+}
+.budha.anim{
+    animation-delay: 1.2s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards ;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform:translateY(0px) ;
+    }
+}
